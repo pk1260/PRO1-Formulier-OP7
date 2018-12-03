@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>customer info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body lang="en">
+  <h1>Een plan voor jouw ontwikkeling</h1>
+  <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
+    <p>Om een eerste stap te zetten naar een persoonlijk opleidingsplan zul je eerst een paar vragen voor jezelf moeten beantwoorden.<br>gemotiveerd Dit formulier helpt jou daarbij.</p>
+    <label>Name<input type="text" name="Naam:" placeholder="first and last name" required="required" autofocus /></label>
+    <select name="selecteer jouw klas">
+      <option value="">selecteer jouw klas</option>
+      <option value="MGD1A">MGD1A</option>
+      <option value="MGD1B">MGD1B</option>
+      <option value="MGD1C">MGD1C</option>
+    </select>
+
+
+    <fieldset class="Red">
+      <legend>Welbevinden</legend>
+      <p>Hoe positief ben je op dit moment over je opleiding?<br></p>
+        <br>
+        <label><input type="radio" name="positief" value="0"> 0</label>
+        <label><input type="radio" name="positief" value="1"> 1</label>
+        <label><input type="radio" name="positief" value="2"> 2</label>
+        <label><input type="radio" name="positief" value="3"> 3</label>
+        <label><input type="radio" name="positief" value="4"> 4</label>
+        <label><input type="radio" name="positief" value="5"> 5</label>
+        <label><input type="radio" name="positief" value="6"> 6</label>
+        <label><input type="radio" name="positief" value="7"> 7</label>
+        <label><input type="radio" name="positief" value="8"> 8</label>
+        <label><input type="radio" name="positief" value="9"> 9</label>
+        <label><input type="radio" name="positief" value="10"> 10</label>
+        <br>
+
+      <p><br>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?<br></p>
+        <br>
+        <label><input type="radio" name="gemotiveerd" value="0"> 0</label>
+        <label><input type="radio" name="gemotiveerd" value="1"> 1</label>
+        <label><input type="radio" name="gemotiveerd" value="2"> 2</label>
+        <label><input type="radio" name="gemotiveerd" value="3"> 3</label>
+        <label><input type="radio" name="gemotiveerd" value="4"> 4</label>
+        <label><input type="radio" name="gemotiveerd" value="5"> 5</label>
+        <label><input type="radio" name="gemotiveerd" value="6"> 6</label>
+        <label><input type="radio" name="gemotiveerd" value="7"> 7</label>
+        <label><input type="radio" name="gemotiveerd" value="8"> 8</label>
+        <label><input type="radio" name="gemotiveerd" value="9"> 9</label>
+        <label><input type="radio" name="gemotiveerd" value="10"> 10</label>
+        <br>
+
+      <p><br>Hoeveel vertrouwen heb je momenteel in je eigen kunnen?<br></p>
+        <br>
+        <label><input type="radio" name="vertrouwen" value="0"> 0</label>
+        <label><input type="radio" name="vertrouwen" value="1"> 1</label>
+        <label><input type="radio" name="vertrouwen" value="2"> 2</label>
+        <label><input type="radio" name="vertrouwen" value="3"> 3</label>
+        <label><input type="radio" name="vertrouwen" value="4"> 4</label>
+        <label><input type="radio" name="vertrouwen" value="5"> 5</label>
+        <label><input type="radio" name="vertrouwen" value="6"> 6</label>
+        <label><input type="radio" name="vertrouwen" value="7"> 7</label>
+        <label><input type="radio" name="vertrouwen" value="8"> 8</label>
+        <label><input type="radio" name="vertrouwen" value="9"> 9</label>
+        <label><input type="radio" name="vertrouwen" value="10"> 10</label>
+        <br>
+
+    </fieldset>
+
+    <fieldset class="White">
+      <legend>Sterke kanten</legend>
+      <p>Wat zijn jouw sterke kanten</p>
+        <label><input type="checkbox" name="HTML" value="Sterk"> Coderen in HTML/CSS</label>
+        <label><input type="checkbox" name="JAVA" value="Sterk"> Programeren in Java</label>
+        <label><input type="checkbox" name="JAVASCRIPT" value="Sterk"> Scripting in Javascript</label>
+        <label><input type="checkbox" name="PLANNING" value="Sterk"> Planning</label>
+        <label><input type="checkbox" name="CO-OP" value="Sterk"> Samenwerken</label>
+    </fieldset>
+
+    <fieldset class="Blue">
+      <legend>Nog te ontwikkelen</legend>
+      <p>Wat zijn jouw zwakke kanten</p>
+        <label><input type="checkbox" name="HTML" value="Zwak"> Coderen in HTML/CSS</label>
+        <label><input type="checkbox" name="JAVA" value="Zwak"> Programeren in Java</label>
+        <label><input type="checkbox" name="JAVASCRIPT" value="Zwak"> Scripting in Javascript</label>
+        <label><input type="checkbox" name="PLANNING" value="Zwak"> Planning</label>
+        <label><input type="checkbox" name="CO-OP" value="Zwak"> Samenwerken</label>
+    </fieldset>
+
+    <fieldset class="Orange">
+      <legend>Opleiding</legend>
+      <p>Wat zijn jouw toekomst opleiding</p>
+      <select name="Toekomst opleidingsplan">
+        <option value="">Selecteer jouw opleiding</option>
+        <option value="Media Developer">Media Developer</option>
+        <option value="Game Developer">Game Developer</option>
+        <option value="Onbekend">Onbekend</option>
+      </select>
+    </fieldset>
+    <p>Wat zijn jouw planne voor de toekomst?</p>
+    <textarea name="Toekomst plannen" rows="8" cols="50"></textarea><br>
+    <label><input type="submit" value="Submit Form"/></label>
+
+    <footer><br>
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+    </footer>
+  </form>
+</body>
+
+</html>
